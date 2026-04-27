@@ -59,15 +59,14 @@ export default function HeroSplit({ id, eyebrow, headline, headlineAccent, body,
         </div>
       </div>
 
-      {/* Right — accent panel */}
-      <div style={{ background: "var(--color-accent-dark)", display: "flex", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden" }}>
-        <div aria-hidden="true" style={{ position: "absolute", top: "-20%", right: "-10%", width: "60%", height: "60%", borderRadius: "50%", background: "rgba(255,255,255,0.06)" }} />
-        <div aria-hidden="true" style={{ position: "absolute", bottom: "-15%", left: "-5%", width: "50%", height: "50%", borderRadius: "50%", background: "rgba(255,255,255,0.04)" }} />
-        {accentWord && (
-          <span style={{ fontFamily: "var(--font-display)", fontSize: "clamp(5rem, 12vw, 12rem)", color: "rgba(255,255,255,0.08)", fontWeight: 400, userSelect: "none", lineHeight: 1, textAlign: "center", padding: "2rem" }}>
-            {accentWord}
-          </span>
-        )}
+      {/* Right — skyline image panel */}
+      <div style={{ position: "relative", overflow: "hidden" }}>
+        <img
+          src="/raleigh-skyline.jpg"
+          alt="Raleigh skyline"
+          style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
+        />
+        <div aria-hidden="true" style={{ position: "absolute", inset: 0, background: "rgba(30,50,71,0.45)" }} />
       </div>
 
       <style>{`
