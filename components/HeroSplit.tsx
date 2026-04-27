@@ -62,7 +62,7 @@ export default function HeroSplit({ id, eyebrow, headline, headlineAccent, body,
       {/* Right — skyline image panel */}
       <div style={{ position: "relative", overflow: "hidden" }}>
         <img
-          src="/raleigh-skyline.jpg"
+          src="/rl-v2.jpeg"
           alt="Raleigh skyline"
           style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
         />
