@@ -38,7 +38,7 @@ export default function StatsRow({ id, eyebrow, headline, headlineAccent, stats 
               borderBottom: "1px solid var(--color-border)",
             }}>
               <div style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.5rem, 5vw, 4rem)", color: "var(--color-accent-dark)", lineHeight: 1, marginBottom: "0.5rem" }}>{s.value}</div>
-              <div style={{ fontFamily: "var(--font-body)", fontWeight: 600, fontSize: "0.875rem", color: "var(--color-fg)", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: s.note ? "0.4rem" : 0 }}>{s.label}</div>
+              <div style={{ fontFamily: "var(--font-body)", fontWeight: 600, fontSize: "0.875rem", color: "var(--color-fg)", textTransform: "uppercase", letterSpacing: "0.06em", whiteSpace: "nowrap", marginBottom: s.note ? "0.4rem" : 0 }}>{s.label}</div>
               {s.note && <div style={{ fontFamily: "var(--font-body)", fontSize: "0.8rem", color: "var(--color-secondary)" }}>{s.note}</div>}
             </div>
           ))}

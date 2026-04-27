@@ -60,11 +60,10 @@ export default function AboutFounder({ id, eyebrow, headline, headlineAccent, bi
           {/* Right — bio */}
           <div>
             <div style={{ marginBottom: "1.5rem" }}>{eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}</div>
-            <SplitHeadline
-              dark={headline}
-              accent={headlineAccent}
-              style={{ fontSize: "clamp(2rem, 4vw, 3.25rem)", marginBottom: "2rem" }}
-            />
+            <h2 className="display" style={{ fontSize: "clamp(2rem, 4vw, 3.25rem)", marginBottom: "2rem", lineHeight: 1.15 }}>
+              <span style={{ display: "block" }}>{headline}</span>
+              {headlineAccent && <em style={{ fontStyle: "italic", color: "var(--color-accent)", display: "block" }}>{headlineAccent}</em>}
+            </h2>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "1.0625rem", color: "var(--color-secondary)", lineHeight: 1.8, marginBottom: "1.5rem" }}>{bioP1}</p>
             {bioP2 && <p style={{ fontFamily: "var(--font-body)", fontSize: "1.0625rem", color: "var(--color-secondary)", lineHeight: 1.8 }}>{bioP2}</p>}
           </div>
