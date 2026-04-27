@@ -41,7 +41,7 @@ export default function NavMinimal({ brandName, links = [], ctaLabel, ctaHref = 
           <a href="#top" style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 400, textDecoration: "none", color: "var(--color-fg)" }}>
             {brandName}
           </a>
-          <span style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%) rotate(-20deg)", fontSize: "0.6rem", fontWeight: 800, letterSpacing: "0.15em", color: "rgba(185,28,28,0.8)", fontFamily: "sans-serif", pointerEvents: "none", whiteSpace: "nowrap", textTransform: "uppercase", border: "1.5px solid rgba(185,28,28,0.7)", padding: "1px 5px", userSelect: "none", lineHeight: 1, borderRadius: "2px" }}>DEMO</span>
+          <span style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%) rotate(-20deg)", fontSize: "1rem", fontWeight: 900, letterSpacing: "0.18em", color: "rgba(185,28,28,0.95)", fontFamily: "sans-serif", pointerEvents: "none", whiteSpace: "nowrap", textTransform: "uppercase", border: "2.5px solid rgba(185,28,28,0.9)", padding: "3px 10px", userSelect: "none", lineHeight: 1, borderRadius: "3px", background: "rgba(255,255,255,0.55)" }}>DEMO</span>
         </div>
 
         {/* Desktop links */}
